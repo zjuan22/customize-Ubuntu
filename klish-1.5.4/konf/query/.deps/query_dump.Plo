@@ -1,0 +1,13 @@
+konf/query/query_dump.lo: konf/query/query_dump.c konf/query/private.h \
+ konf/query.h lub/types.h lub/dump.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h
+
+konf/query/private.h:
+
+konf/query.h:
+
+lub/types.h:
+
+lub/dump.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h:

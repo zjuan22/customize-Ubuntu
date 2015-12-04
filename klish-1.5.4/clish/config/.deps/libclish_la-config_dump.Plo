@@ -1,0 +1,13 @@
+clish/config/libclish_la-config_dump.lo: clish/config/config_dump.c \
+ lub/dump.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ clish/config/private.h clish/config.h lub/types.h
+
+lub/dump.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h:
+
+clish/config/private.h:
+
+clish/config.h:
+
+lub/types.h:

@@ -1,0 +1,16 @@
+clish/action/libclish_la-action_dump.lo: clish/action/action_dump.c \
+ lub/dump.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ clish/action/private.h clish/action.h lub/bintree.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h
+
+lub/dump.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h:
+
+clish/action/private.h:
+
+clish/action.h:
+
+lub/bintree.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h:

@@ -1,0 +1,16 @@
+lub/string/string_suffix.lo: lub/string/string_suffix.c \
+ lub/string/private.h lub/string.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h lub/c_decl.h \
+ lub/types.h lub/ctype.h
+
+lub/string/private.h:
+
+lub/string.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h:
+
+lub/c_decl.h:
+
+lub/types.h:
+
+lub/ctype.h:
