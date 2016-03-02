@@ -280,6 +280,9 @@ chrome:
 	- sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' 
 	-  sudo apt-get update ; sudo apt-get install google-chrome-stable -y
 
+keyboard:
+	- setxkbmap -model abnt2 -layout br
+
 help:
 	@echo "make [target]"
 	@echo
