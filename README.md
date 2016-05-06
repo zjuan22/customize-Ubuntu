@@ -85,7 +85,7 @@ keyboard 	#
 pycharm 	#Python IDE
 help 		#dispay this help menu
 targets 	#list all targets
-`
+```
 
 good instalation :D
 
