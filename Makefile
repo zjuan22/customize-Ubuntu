@@ -3,16 +3,16 @@
 
 .PHONY: cmds
 
-update:
+update:		#update your aplication mirrors
 	- sudo apt-get update
 
-vim: 
+vim: 		#vim, the best command line editor
 	#instalando - vim
 	#- sudo apt-get update
 	- sudo apt-get install vim
 	- sudo cp ./vimrc /etc/vim/
 
-cinnamon:
+cinnamon:	#LinuxMint GUI for Ubuntu!
 	#cinnamon GUI
 	- sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-nightly
 	- sudo apt-get update
@@ -38,7 +38,7 @@ cinnamon:
 	@echo ""
 	@echo "#######################################################################"
 
-ssh:
+ssh:		#install SSH client and server
 	#instalando - ssh
 	- sudo apt-get update
 	- sudo apt-get install libssh-4    
@@ -47,7 +47,7 @@ ssh:
 	- sudo apt-get install ssh-askpass-gnome       
 	- sudo apt-get install ssh-import-id          
 
-sublime:
+sublime:	#easy to use text editor and IDE
 	#instalando - sublime
 	- sudo add-apt-repository ppa:webupd8team/sublime-text-2
 	- sudo apt-get update
@@ -55,7 +55,7 @@ sublime:
 	- cp  MonokaiDark.tmTheme  ~/.config/sublime-text-2/Packages/Color\ Scheme\ -\ Default/
 	- cp Preferences.sublime-settings ~/.config/sublime-text-2/Packages/User/
 
-pinta:
+pinta:		#paint like program for Ubuntu
 	#instalando - pinta
 	- sudo add-apt-repository ppa:pinta-maintainers/pinta-stable/ubuntu
 	- sudo apt-get update
@@ -63,24 +63,24 @@ pinta:
 	- sudo apt-get update
 	- sudo apt-get install pinta
 
-eclipse:
+eclipse:	#Eclipse IDE
 	#instaladno - eclipse
 	- sudo apt-get update
 	- sudo apt-get install eclipse eclipse-cdt g++
 
-gimp:
+gimp:		#powerfull and photoshop quivalent image editor
 	#instalando - gimp 
 	- sudo apt-get update
 	- sudo apt-get install gimp                            
 	- sudo apt-get install gimp-data                       
 	- sudo apt-get install libgimp2.0                      
 
-svn:
+svn:		#versioning controls software
 	#instalando svn
 	- sudo apt-get update
 	- sudo apt-get install subversion libapache2-svn
 
-kdesvn:
+kdesvn:		#KDE gui for SVN
 	# instalado KDESVN
 	- sudo apt-get update
 	- sudo apt-get install kdesvn                          
@@ -88,12 +88,12 @@ kdesvn:
 	- sudo apt-get install libsvn1                         
 	- sudo apt-get install libsvnqt6                       
 
-aptitude:
+aptitude:	#software manager for Ubuntu
 	#aptitude
 	- sudo apt-get update
 	- sudo apt-get install aptitude
 
-myunit:
+myunit:		#My unit: customize Unit (not recomended for Ubuntu >= 13)
 	#unity-tweak-tool
 	- sudo apt-get update
 	- sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily
@@ -106,62 +106,65 @@ myunit:
 	- sudo apt-get install humanity-colors
 	- sudo apt-get install dconf
 
-chromium:
+chromium:	#Chrome like bronser for Ubuntu
 	- sudo apt-get update
 	- sudo apt-get install chromium-browser
 
-bash:
+bash:		#better shell script interface
 	#configurações personalizadas para o terminal
 	- cp bashrc  ~/.bashrc
 
-desktop:
+desktop:	#for non-english users: change the name of your Desktop directory to... Desktop ;P
 	#configurar Desktop e configurações padrão de outras aplicações
 	- cp user-dirs.dirs ~/.config/user-dirs.dirs
 	- cp bashrc  ~/.bashrc
 
-sqlite:
+sqlite:		##Install Sqlite3
 	#instalar sqlite3
-	- sudo chmod 777 sqlite3
-	- sudo cp ./sqlite3 /usr/bin/
-	- sudo apt-get install tcl
-	- cd sqlite3-3.7.9
-	- sudo ./sqlite3-3.7.9/configure
-	- sudo make -C ./sqlite3-3.7.9/
-	- sudo make install -C ./sqlite3-3.7.9/
+	#- sudo chmod 777 sqlite3
+	#- sudo cp ./sqlite3 /usr/bin/
+	#- sudo apt-get install tcl
+	#- cd sqlite3-3.7.9
+	#- sudo ./sqlite3-3.7.9/configure
+	#- sudo make -C ./sqlite3-3.7.9/
+	#- sudo make install -C ./sqlite3-3.7.9/
+	- sudo apt-get install sqlite3
+	- sudo apt-get install libsqlite3-dev
 
-emacs:
+emacs:		#Emacs text editor
 	# instalar emacs
 	- sudo apt-get install emacs
 
-meld:
+meld:		#meld text diff, with a friendly GUI
 	#instalar meld
 	- sudo apt-get brctl command linuxinstall meld
 
-dia:
+dia:		#diagramns creator
 	#instalar dia
 	- sudo apt-get updade
 	- sudo apt-get autoclean
 	- sudo apt-get install --fix-missing dia
 
-octave:
+octave:		#scentific computation sftware, compatble with Matlab language
 	#instalar octave
 	- sudo apt-get update
 	- sudo apt-add-repository ppa:octave/stable
 	- sudo apt-get update
 	- sudo apt-get install octave
 
-imagens:
-	# wallpapers
-	- cp -r ./Imagens/* ~/Imagens/
-	- sudo chmod -R 666 ~/Imagens/
+wallpapers:	#A collection of must-havel awsome papers ;P 
+	#wallpapers
+	- tar -xzvf Wallpapers.tar.gz
+	- chmod -R ug+rw ./Wallpapers
+	- mv ./Wallpapers ~/Wallpapers
 
-cmds:
+cmds:		#automatizable commands
 	# Criar pasta de comandos pessoais
 	- sudo mkdir ~/cmds/
 	- sudo cp ./cmds/* ~/cmds/
 	- sudo chmod -R 777 ~/cmds/*
 
-deviceDrivers:
+deviceDrivers:	#kerner source for device drivers creation
 	#instalar libs para devicedrivers
 	- sudo apt-get update
 	- sudo apt-get install linux-headers-generic
@@ -177,19 +180,19 @@ mtd-utils:
 libncurses:
 	- sudo apt-get install libncursesw5-dbg
 
-bridge-utils:
+bridge-utils:	#bridge utils (http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge)
 	#instalar bridge-utils
 	- apt-get install bridge-utils
 
-traceroute:
+traceroute:	#traceroute (https://pt.wikipedia.org/wiki/Traceroute)
 	#instalar traceroute
 	- sudo apt-get install traceroute
 
-kdbg:
+kdbg:		#good and simple debugger
 	#degugger
 	- sudo apt-get install kdbg
 
-dconf:
+dconf:		#tool for customize ubuntu
 	- sudo apt-get install asoundconf-gtk
 	- sudo apt-get install dconf
 	- sudo apt-get install dconf-tools
@@ -216,84 +219,91 @@ dconf:
 	@echo "More info here:"
 	@echo "http://antecblue.wordpress.com/2011/10/17/replace-the-orange-color-in-ubuntu-11-10-active-color/"
 
-dtc:
+dtc:	
 	- sudo apt-get install device-tree-compiler
 
-valgrind:
+valgrind:	#testing tool: check if yor program has memory leaks!
 	- sudo apt-get install valgrind
 
-grive:
+grive:		#
 	- sudo apt-add-repository ppa:thefanclub/grive-tools
 	- sudo apt-get update
 	- sudo apt-get install -y grive-tools
 
-git:
+git:		#controll of version
 	- sudo apt-get install git
 	- sudo apt-get install gitk
 
-web:
+web:		#command-line web tools: curl, wget, lynx and w3m
 	-  sudo apt-get install curl wget lynx w3m
 
-ddd:
+ddd:		#debuger
 	# debugger
 	- sudo apt-get install ddd
 
-doxygen:
+doxygen:	#document your software!
 	# criador de documentação para software
 	-  sudo apt-get install doxygen   doxygen-doc  doxygen-gui doxygen-latex
 
-youtube:
+youtube:	#download youtube videos
 	# ferramentas para se fazer download de vídeos do youtube
 	- sudo apt-get install youtube-dl   
 	- sudo apt-get install libwebservice-youtube-perl 
 	- sudo apt-get install libwww-youtube-download-perl 
 
-tree:
+tree:		#display directory trees
 	# programa para exibir arvore de diretórios via terminal
 	- sudo apt-get install tree
 
 
-gnome-panel:
+gnome-panel:	#create icon launchers for aplications
 	- sudo apt-get install gnome-panel
 
-ruby:
+ruby:		#ruby language
 	#Linguagem 
 	- sudo apt-get install  ruby1.9.1  rubygems
 
-qt:
+qt:		#Qt IDE
 	#programa para desenvolvimento de interfaces e aplicações
 	- sudo ./qt-opensource-linux-x86-1.6.0-4-online.run
 
-eletronica:
+eletronica:	#
 	# instala aplicações úteis para área de eletronica
 	- sudo apt-get install gresistor
 
-nemiver:
+nemiver:	#
 	- sudo apt-get install nemiver
 
-klish:
+klish:		#command-line creator component
 	-  sudo klish-1.5.4/install_clish.sh
 
-man-gpp:
+man-gpp:	#
 	- sudo apt-get install manpages-dev glibc-doc 
 
-chrome:
+chrome:		#Chrome brownser
 	- wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 	- sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' 
 	-  sudo apt-get update ; sudo apt-get install google-chrome-stable -y
 
-keyboard:
+keyboard:	#
 	- setxkbmap -model abnt2 -layout br
 
-help:
+pycharm:	#Python IDE
+	- sudo add-apt-repository ppa:mystic-mirage/pycharm
+	- sudo apt-get update
+	- sudo apt-get install pycharm-community
+	- sudo apt-get install pycharm 
+
+
+help:		#dispay this help menu
 	@echo "make [target]"
 	@echo
-	@echo "targets"
-	@echo "--------"
+	@echo "<targets>	#<description>"
+	@echo "---------	#-------------------------------------------------------------------------------------"
 	@#comando abaixo imprime todos os targets
 	@cat Makefile |grep "^[a-z]" |grep "[a-z]*:" |sed "s/:/ /g" |awk '{print $1}'
 
-targets:	
+targets:	#list all targets
 	@#comando abaixo imprime todos os targets
 	@cat Makefile |grep "^[a-z]" |grep "[a-z]*:" |sed "s/:/ /g" |awk '{print $1}'
 

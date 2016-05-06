@@ -150,7 +150,6 @@ octave:
 
 imagens:
 	# wallpapers
-	- rm -r ~/Imagnes/*
 	- cp -r ./Imagens/* ~/Imagens/
 	- sudo chmod -R 666 ~/Imagens/
 
@@ -280,6 +279,9 @@ chrome:
 	- wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 	- sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' 
 	-  sudo apt-get update ; sudo apt-get install google-chrome-stable -y
+
+keyboard:
+	- setxkbmap -model abnt2 -layout br
 
 help:
 	@echo "make [target]"
