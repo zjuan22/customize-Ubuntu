@@ -4,33 +4,33 @@ Just a bunch of files that allows me to customize my  Ubuntu just typing make XD
 # How use?
 First just use git commit
 
-`
-git ...
-`
+```
+git clone https://github.com/AndersonPaschoalon/customize-Ubuntu
+```
 
 Then, just type 
 
-`
+```
 make <target>
-`
+```
 
 where `<target>` is the software you want to install.
 
 To get a more detailed information about the software availables in this project, type 
 
-`
+```
 make help
-`
+```
 
 or 
 
-`
+```
 make targets
-`
+```
 
 You will get this output for `make help`:
 
-`
+```
 make [target]
 
 <targets>	#<description>
