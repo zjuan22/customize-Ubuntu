@@ -119,7 +119,7 @@ desktop:	#for non-english users: change the name of your Desktop directory to...
 	- cp user-dirs.dirs ~/.config/user-dirs.dirs
 	- cp bashrc  ~/.bashrc
 
-sqlite:		##Install Sqlite3
+sqlite:		#Install Sqlite3
 	#instalar sqlite3
 	#- sudo chmod 777 sqlite3
 	#- sudo cp ./sqlite3 /usr/bin/
@@ -145,7 +145,7 @@ dia:		#diagramns creator
 	- sudo apt-get autoclean
 	- sudo apt-get install --fix-missing dia
 
-octave:		#scentific computation sftware, compatble with Matlab language
+octave:		#scentific computation software, compatble with Matlab language
 	#instalar octave
 	- sudo apt-get update
 	- sudo apt-add-repository ppa:octave/stable
@@ -171,13 +171,13 @@ deviceDrivers:	#kerner source for device drivers creation
 	- sudo apt-get install kernel-package
 	- sudo apt-get install build-dep 
 
-mtd-utils: 
+mtd-utils: 	#
 	#Memory Technology Device Utilities
 	#http://www.linux-mtd.infradead.org/
 	- sudo apt-get update
 	- sudo apt-get install mtd-utils
 
-libncurses:
+libncurses:	#
 	- sudo apt-get install libncursesw5-dbg
 
 bridge-utils:	#bridge utils (http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge)
@@ -219,7 +219,7 @@ dconf:		#tool for customize ubuntu
 	@echo "More info here:"
 	@echo "http://antecblue.wordpress.com/2011/10/17/replace-the-orange-color-in-ubuntu-11-10-active-color/"
 
-dtc:	
+dtc:		#
 	- sudo apt-get install device-tree-compiler
 
 valgrind:	#testing tool: check if yor program has memory leaks!
@@ -294,6 +294,18 @@ pycharm:	#Python IDE
 	- sudo apt-get install pycharm-community
 	- sudo apt-get install pycharm 
 
+rar:		#rar: compres and uncompress files
+	- sudo apt-get update
+	- sudo apt-get install rar
+	- sudo apt-get install unrar
+
+nuvola: 	#Nuvola Music Player
+	- sudo add-apt-repository ppa:nuvola-player-builders/stable
+	- sudo apt-get update
+	- sudo apt-get install nuvolaplayer
+
+alacarte:	#Customize Gnome menu
+	- sudo apt-get install alacarte
 
 help:		#dispay this help menu
 	@echo "make [target]"
