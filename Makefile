@@ -152,7 +152,7 @@ octave:		#scentific computation software, compatble with Matlab language
 	- sudo apt-get update
 	- sudo apt-get install octave
 
-wallpapers:	#A collection of must-havel awsome papers ;P 
+wallpapers:	#A collection of must-have awsome papers ;P 
 	#wallpapers
 	- tar -xzvf Wallpapers.tar.gz
 	- chmod -R ug+rw ./Wallpapers
@@ -306,6 +306,9 @@ nuvola: 	#Nuvola Music Player
 
 alacarte:	#Customize Gnome menu
 	- sudo apt-get install alacarte
+
+cloc:		#cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+	- sudo apt-get install cloc
 
 help:		#dispay this help menu
 	@echo "make [target]"
