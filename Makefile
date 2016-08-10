@@ -137,7 +137,7 @@ emacs:		#Emacs text editor
 
 meld:		#meld text diff, with a friendly GUI
 	#instalar meld
-	- sudo apt-get brctl command linuxinstall meld
+	- sudo apt-get install meld
 
 dia:		#diagramns creator
 	#instalar dia
@@ -233,6 +233,9 @@ grive:		#
 git:		#controll of version
 	- sudo apt-get install git
 	- sudo apt-get install gitk
+	- sudo apt-get install meld
+	@echo "Configure diff tool as meld"
+	- git config --global diff.external meld	
 
 web:		#command-line web tools: curl, wget, lynx and w3m
 	-  sudo apt-get install curl wget lynx w3m
