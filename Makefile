@@ -138,7 +138,7 @@ emacs:		#Emacs text editor
 
 meld:		#meld text diff, with a friendly GUI
 	#instalar meld
-	- sudo apt-get brctl command linuxinstall meld
+	- sudo apt-get install meld
 
 dia:		#diagramns creator
 	#instalar dia
@@ -153,7 +153,7 @@ octave:		#scentific computation software, compatble with Matlab language
 	- sudo apt-get update
 	- sudo apt-get install octave
 
-wallpapers:	#A collection of must-havel awsome papers ;P 
+wallpapers:	#A collection of must-have awsome papers ;P 
 	#wallpapers
 	- tar -xzvf Wallpapers.tar.gz
 	- chmod -R ug+rw ./Wallpapers
@@ -234,6 +234,9 @@ grive:		#
 git:		#controll of version
 	- sudo apt-get install git
 	- sudo apt-get install gitk
+	- sudo apt-get install meld
+	@echo "Configure diff tool as meld"
+	- git config --global diff.external meld	
 
 web:		#command-line web tools: curl, wget, lynx and w3m
 	-  sudo apt-get install curl wget lynx w3m
@@ -307,6 +310,9 @@ nuvola: 	#Nuvola Music Player
 
 alacarte:	#Customize Gnome menu
 	- sudo apt-get install alacarte
+
+cloc:		#cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+	- sudo apt-get install cloc
 
 help:		#dispay this help menu
 	@echo "make [target]"
