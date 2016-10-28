@@ -1,6 +1,7 @@
 
 #INSTALAR APLICATIVOS##########################################################
 
+
 .PHONY: cmds
 
 update:		#update your aplication mirrors
