@@ -13,32 +13,6 @@ vim: 		#vim, the best command line editor
 	- sudo apt-get install vim
 	- sudo cp ./vimrc /etc/vim/
 
-cinnamon:	#LinuxMint GUI for Ubuntu!
-	#cinnamon GUI
-	- sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-nightly
-	- sudo apt-get update
-	- sudo apt-get install cinnamon
-	- sudo apt-get install gnome-icon-theme-yasis
-	- sudo apt-get install gnome-icon-theme-suede 
-	- sudo apt-get install gnome-icon-theme-nuovo
-	- sudo apt-get install gnome-icon-theme-gperfection2
-	- sudo apt-get install cinnamon-settings-daemon 
-	- sudo apt-get install cinnamon-settings-daemon 
-	#instalar xfce4 GUI
-	- sudo apt-get update
-	- sudo apt-get install xubuntu-desktop
-	- sudo apt-get install xfce4
-	@echo "#######################################################################"
-	@echo ""
-	@echo "==	CONFIGURACAO DOS ICONES	=="
-	@echo ""
-	@echo "Caso os icones nao estejam aparecendo corretamente, significa que"
-	@echo "eles nao foram configurados. Para isso, va no menu iniciar>"
-	@echo "> "configuracao do sistema", > "temas", aba "Outras configuracoes"" 
-	@echo "(3a aba) > barra "ícones". Recomentase a opção elementary-xfce."
-	@echo ""
-	@echo "#######################################################################"
-
 ssh:		#install SSH client and server
 	#instalando - ssh
 	- sudo apt-get update
