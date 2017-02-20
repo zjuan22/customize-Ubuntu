@@ -288,6 +288,39 @@ alacarte:	#Customize Gnome menu
 cloc:		#cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
 	- sudo apt-get install cloc
 
+atop:		#CPU and RAM live monitoring program
+	- sudo apt-get install atop
+
+htop:		#CPU and RAM live monitoring program
+	- sudo apt-get install htop
+iperf:
+	- sudo apt-get install iperf
+
+tcpreplay:
+	- sudo apt-get install tcpreplay
+
+ostinato:
+	- sudo apt-get install ostinato
+	- sudo -H pip install python-ostinato
+
+tcptrace:
+	- sudo apt-get install tcptrace
+
+apt-clean:
+	- sudo apt-get clean
+	- sudo apt-get clean up
+	- sudo apt-get autoclean
+	- sudo apt-get autoremove
+	- sudo apt-get -f install
+	- sudo apt-get autoremove
+	- sudo apt-get clean
+	- sudo apt-get clean up
+	- sudo apt-get autoclean
+
+
+basic-install:
+	- make update vim ssh sublime pinta eclipse gimp aptitude chromium bash desktop sqlite emacs meld dia octave wallpapers cmds bridge-utils traceroute kdbg valgring web ddd tree gnome-panel ruby qt chrome rar pycharm alacarte cloc atop htop 
+
 help:		#dispay this help menu
 	@echo "make [target]"
 	@echo
