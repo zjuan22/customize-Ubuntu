@@ -306,6 +306,18 @@ ostinato:
 tcptrace:
 	- sudo apt-get install tcptrace
 
+netbeans:	#Extensible Java IDE
+	- sudo apt-get install netbeans libnetbeans-cvsclient-java
+
+codelite:	#Powerful and lightweight IDE
+	- sudo apt-get install codelite codelite-plugins
+
+fping:		#sends ICMP ECHO_REQUEST packets to network hosts
+	- sudo apt-get install fping
+
+ack:	#  um programa como o grep específico para grandes árvores de código fonte
+	- sudo apt-get install ack-grep
+
 apt-clean:
 	- sudo apt-get clean
 	- sudo apt-get clean up
