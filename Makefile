@@ -329,6 +329,9 @@ apt-clean:
 	- sudo apt-get clean up
 	- sudo apt-get autoclean
 
+ovs:	# Install OpenV-Switch
+	- sudo apt-get install openvswitch-switch
+
 
 basic-install:
 	- make update vim ssh sublime pinta eclipse gimp aptitude chromium bash desktop sqlite emacs meld dia octave wallpapers cmds bridge-utils traceroute kdbg valgring web ddd tree gnome-panel ruby qt chrome rar pycharm alacarte cloc atop htop 
