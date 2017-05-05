@@ -31,13 +31,10 @@ make targets
 You will get this output for `make help`:
 
 ```
-make [target]
-
 <targets>	#<description>
 ---------	#-------------------------------------------------------------------------------------
 update 		#update your aplication mirrors
 vim  		#vim, the best command line editor
-cinnamon 	#LinuxMint GUI for Ubuntu!
 ssh 		#install SSH client and server
 sublime 	#easy to use text editor and IDE
 pinta 		#paint like program for Ubuntu
@@ -55,7 +52,7 @@ emacs 		#Emacs text editor
 meld 		#meld text diff, with a friendly GUI
 dia 		#diagramns creator
 octave 		#scentific computation software, compatble with Matlab language
-wallpapers 	#A collection of must-havel awsome papers ;P 
+wallpapers 	#A collection of must-have awsome papers ;P 
 cmds 		#automatizable commands
 deviceDrivers 	#kerner source for device drivers creation
 mtd-utils  	#
@@ -83,6 +80,23 @@ man-gpp 	#
 chrome 		#Chrome brownser
 keyboard 	#
 pycharm 	#Python IDE
+rar 		#rar  compres and uncompress files
+nuvola  	#Nuvola Music Player
+alacarte 	#Customize Gnome menu
+cloc 		#cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+atop 		#CPU and RAM live monitoring program
+htop 		#CPU and RAM live monitoring program
+iperf 
+tcpreplay 
+ostinato 
+tcptrace 
+netbeans 	#Extensible Java IDE
+codelite 	#Powerful and lightweight IDE
+fping 		#sends ICMP ECHO_REQUEST packets to network hosts
+ack 		#  um programa como o grep específico para grandes árvores de código fonte
+apt-clean 
+ovs 		# Install OpenV-Switch
+basic-install 
 help 		#dispay this help menu
 targets 	#list all targets
 ```
@@ -90,4 +104,4 @@ targets 	#list all targets
 good instalation :D
 
 
-
+Release names: Ramdom
