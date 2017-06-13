@@ -1,7 +1,7 @@
-
 #INSTALAR APLICATIVOS##########################################################
 
-
+BIN_DIR = /usr/local/bin/
+CMDS_DIR = ./my-cmds
 .PHONY: cmds
 
 update:		#update your aplication mirrors
@@ -119,6 +119,7 @@ dia:		#diagramns creator
 	- sudo apt-get updade
 	- sudo apt-get autoclean
 	- sudo apt-get install --fix-missing dia
+	- mkdir ~/dia-workspace
 
 octave:		#scentific computation software, compatble with Matlab language
 	#instalar octave
@@ -332,9 +333,44 @@ apt-clean:
 ovs:	# Install OpenV-Switch
 	- sudo apt-get install openvswitch-switch
 
+meld-git: #configure meld for git
+	- sudo apt-get install meld
+	- sudo chmod 777 ${CMDS_DIR}/meld-diff.py
+	- sudo install ${CMDS_DIR}/meld-diff.py ${BIN_DIR}
+	- git config --global diff.external meld-diff.py
+
+keyboard-br-abnt:	#Teclado com configuração Brasil ABNT
+	- sudo install  ${CMDS_DIR}/keyboard-br-abnt.sh ${BIN_DIR}
+
+create-icon:		# Crie icones para executaveis
+	- sudo install ${CMDS_DIR}/create-icon.sh ${BIN_DIR}
+
+more-workspaces: 	# modifique quantidade de workspaces
+	- sudo install ${CMDS_DIR}/more-workspaces.sh ${BIN_DIR}
+
+latex:
+	- sudo apt-get install texlive-full
+	- sudo apt-get install texmaker
+	- sudo apt-get install texstudio
+
+rename-no-white-spaces:
+	- sudo install ${CMDS_DIR}/rename-no-white-spaces.sh  ${BIN_DIR}
+
+
+
+graphics:
+	- sudo apt-get update
+	- sudo apt-get install qpdfview
+	- sudo apt-get install inkscape
+	- sudo apt-get install okular
+	- sudo apt-get install gimp                            
+	- sudo apt-get install gimp-data                       
+	- sudo apt-get install libgimp2.0                      
+	- sudo make dia
 
 basic-install:
 	- make update vim ssh sublime pinta eclipse gimp aptitude chromium bash desktop sqlite emacs meld dia octave wallpapers cmds bridge-utils traceroute kdbg valgring web ddd tree gnome-panel ruby qt chrome rar pycharm alacarte cloc atop htop 
+
 
 help:		#dispay this help menu
 	@echo "make [target]"
@@ -347,6 +383,11 @@ help:		#dispay this help menu
 targets:	#list all targets
 	@#comando abaixo imprime todos os targets
 	@cat Makefile |grep "^[a-z]" |grep "[a-z]*:" |sed "s/:/ /g" |awk '{print $1}'
+
+
+	
+         
+
 
 
 
