@@ -2,7 +2,7 @@
 
 BIN_DIR = /usr/local/bin/
 CMDS_DIR = ./my-cmds
-.PHONY: cmds
+.PHONY: cmds git-keep
 
 update:		#update your aplication mirrors
 	- sudo apt-get update
@@ -356,7 +356,9 @@ latex:
 rename-no-white-spaces:
 	- sudo install ${CMDS_DIR}/rename-no-white-spaces.sh  ${BIN_DIR}
 
-
+notes:
+	- sudo add-apt-repository ppa:umang/indicator-stickynotes && sudo apt-get update 
+	- sudo aptitude install indicator-stickynotes
 
 graphics:
 	- sudo apt-get update
@@ -367,6 +369,14 @@ graphics:
 	- sudo apt-get install gimp-data                       
 	- sudo apt-get install libgimp2.0                      
 	- sudo make dia
+
+php:
+	- sudo apt-get install php5-dev
+	- sudo apt-get install php-pear
+	- sudo apt-get install php5-cgi
+
+git-keep:
+	- sudo install git-keep ${BIN_DIR}
 
 basic-install:
 	- make update vim ssh sublime pinta eclipse gimp aptitude chromium bash desktop sqlite emacs meld dia octave wallpapers cmds bridge-utils traceroute kdbg valgring web ddd tree gnome-panel ruby qt chrome rar pycharm alacarte cloc atop htop 
