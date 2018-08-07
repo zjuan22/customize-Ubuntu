@@ -1,0 +1,41 @@
+"autocmd vimenter * NERDTree
+
+syntax on                   " syntax highlighting
+
+map <F6> :NERDTreeToggle<CR>
+map <C-g> :w!<CR>
+map <C-n> :tabnew <CR>
+map <C-w> :tabclose<CR>
+map <tab> :tabn<CR>
+map <s-tab> :tabp<CR>
+ 
+set mouse=v                 " automatically enable mouse usage
+set mouse=a                 " automatically enable mouse usage
+set clipboard+=unnamed  " use the clipboards of vim and win
+set clipboard=unnamedplus
+set paste               " Paste from a windows or from vim
+set go+=a               " Visual selection automatically copied to the clipboard
+" Vim UI {
+"     color solarized                 " load a colorscheme
+"     color python                 " load a colorscheme
+     "colorscheme blackboard                 " load a colorscheme
+     set tabpagemax=15               " only show 15 tabs
+     set showmode                    " display the current mode
+     set hlsearch                    " Highlighting search matches  
+     "set cursorline                  " highlight current line
+     set number
+     hi cursorline guibg=\#333333     " highlight bg color of currentline
+     hi CursorColumn guibg=\#333333   " highlight cursor
+
+" NerdTree {
+         map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
+         map <leader>e :NERDTreeFind<CR>
+         nmap <leader>nt :NERDTreeFind<CR>
+
+         let NERDTreeShowBookmarks=1
+         let NERDTreeIgnore=['\\.pyc', '\\\~$', '\\.swo$', '\\.swp$','\\.git', '\\.hg', '\\.svn', '\\.bzr']
+         let NERDTreeChDirMode=0
+         let NERDTreeQuitOnOpen=1
+         let NERDTreeShowHidden=1
+         let NERDTreeKeepTreeInNewTab=1
+     " }
