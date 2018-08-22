@@ -227,6 +227,7 @@ graphics:
 	- sudo apt-get install gimp          -y                  
 	- sudo apt-get install gimp-data     -y                  
 	- sudo apt-get install libgimp2.0    -y                  
+	- sudo apt-get install python-matplotlib    -y                  
 
 php:
 	- sudo apt-get install php5-dev  -y
@@ -255,7 +256,11 @@ wireshark:
 	- sudo apt install wireshark-qt -y
 virtualbox:
 	- sudo apt-get install virtualbox -y
-          
+easystroke:       
+	- sudo apt install easystroke	 -y
+
+basic:
+	- make update vim ssh meld rar htop otros easystroke graphics wireshark 
 
 basic-install:
 	- make update vim ssh sublime pinta eclipse gimp aptitude chromium bash meld dia wallpapers cmds traceroute kdbg web tree gnome-panel chrome rar alacarte cloc atop htop 
