@@ -2,6 +2,16 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+alias bashrc='vim ~/.bashrc' 
+
+# Git Aliases                                                                   
+alias gits='git status'                                                         
+alias gitb='git branch -a'                                                      
+alias gitc='vim .git/config'                                                    
+alias catc='cat .git/config'                                                    
+alias gitd='git diff'
+
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 

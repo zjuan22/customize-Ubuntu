@@ -21,6 +21,7 @@ ssh:		#install SSH client and server
 	- sudo apt-get install openssh-server    -y 
 	- sudo apt-get install ssh-askpass-gnome -y      
 	- sudo apt-get install ssh-import-id     -y     
+	- sudo apt install sshpass     -y     
 
 sublime:	#easy to use text editor and IDE
 	#instalando - sublime
@@ -227,7 +228,6 @@ graphics:
 	- sudo apt-get install gimp          -y                  
 	- sudo apt-get install gimp-data     -y                  
 	- sudo apt-get install libgimp2.0    -y                  
-	- sudo apt-get install python-matplotlib    -y                  
 
 php:
 	- sudo apt-get install php5-dev  -y
@@ -258,9 +258,10 @@ virtualbox:
 	- sudo apt-get install virtualbox -y
 easystroke:       
 	- sudo apt install easystroke	 -y
-
+matplotlib:
+	- sudo apt-get install python-matplotlib    -y                  
 basic:
-	- make update vim ssh meld rar htop otros easystroke graphics wireshark 
+	- make update vim ssh meld rar htop easystroke graphics wireshark 
 
 basic-install:
 	- make update vim ssh sublime pinta eclipse gimp aptitude chromium bash meld dia wallpapers cmds traceroute kdbg web tree gnome-panel chrome rar alacarte cloc atop htop 
